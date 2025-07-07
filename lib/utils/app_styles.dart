@@ -10,25 +10,21 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle styleBold16(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFF4EB7F2),
-      fontSize: 16,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w700,
-    );
-  }
+  static const TextStyle styleBold16 = TextStyle(
+    color: Color(0xFF4EB7F2),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w700,
+  );
 
-  static TextStyle styleMedium16(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFF064061),
-      fontSize: 16,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w500,
-    );
-  }
+  static const TextStyle styleMedium16 = TextStyle(
+    color: Color(0xFF064061),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w500,
+  );
 
-  static TextStyle styleMedium20(BuildContext context) {
+  static TextStyle styleMedium20() {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
       fontSize: 20,
@@ -37,16 +33,14 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle styleSemiBold16(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFF064061),
-      fontSize: 16,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600,
-    );
-  }
+  static const TextStyle styleSemiBold16 = TextStyle(
+    color: Color(0xFF064061),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+  );
 
-  static TextStyle styleSemiBold20(BuildContext context) {
+  static TextStyle styleSemiBold20() {
     return TextStyle(
       color: const Color(0xFF064061),
       fontSize: 20,
@@ -55,16 +49,14 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle styleRegular12(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFFAAAAAA),
-      fontSize: 12,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w400,
-    );
-  }
+  static const TextStyle styleRegular12 = TextStyle(
+    color: Color(0xFFAAAAAA),
+    fontSize: 12,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w400,
+  );
 
-  static TextStyle styleSemiBold24(BuildContext context) {
+  static TextStyle styleSemiBold24() {
     return TextStyle(
       color: const Color(0xFF4EB7F2),
       fontSize: 24,
@@ -73,7 +65,7 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle styleRegular14(BuildContext context) {
+  static TextStyle styleRegular14() {
     return TextStyle(
       color: const Color(0xFFAAAAAA),
       fontSize: 14,
@@ -82,7 +74,7 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle styleSemiBold18(BuildContext context) {
+  static TextStyle styleSemiBold18() {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
       fontSize: 18,
