@@ -14,9 +14,21 @@ class DrawerItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return isActive
-        ? ActiveDrawerItem(drawerItemModel: drawerItemModel)
-        : InActiveDrawerItem(drawerItemModel: drawerItemModel);
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 300),
+      transitionBuilder: (child, animation) {
+        return FadeTransition(opacity: animation, child: child);
+      },
+      child: isActive
+          ? ActiveDrawerItem(
+              key: const ValueKey('active'),
+              drawerItemModel: drawerItemModel,
+            )
+          : InActiveDrawerItem(
+              key: const ValueKey('inactive'),
+              drawerItemModel: drawerItemModel,
+            ),
+    );
   }
 }
 
