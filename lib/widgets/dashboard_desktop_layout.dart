@@ -8,23 +8,28 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(child: CustomDrawer()),
-        SizedBox(width: 32),
+        const Expanded(child: CustomDrawer()),
+        const SizedBox(width: 32),
         Expanded(
           flex: 3,
-          child: Column(
-            children: [
-              SizedBox(height: 40),
-              AllExpenses(),
-              SizedBox(height: 24),
-              Expanded(child: QuickInvoice()),
-              SizedBox(height: 32),
-            ],
+          child: ScrollConfiguration(
+            behavior: ScrollConfiguration.of(
+              context,
+            ).copyWith(scrollbars: false),
+            child: const CustomScrollView(
+              slivers: [
+                SliverToBoxAdapter(child: SizedBox(height: 40)),
+                SliverToBoxAdapter(child: AllExpenses()),
+                SliverToBoxAdapter(child: SizedBox(height: 24)),
+                SliverToBoxAdapter(child: QuickInvoice()),
+                SliverToBoxAdapter(child: SizedBox(height: 32)),
+              ],
+            ),
           ),
         ),
-        SizedBox(width: 24),
+        const SizedBox(width: 24),
         // Expanded(
         //   flex: 2,
         //   child: Column(
@@ -37,7 +42,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         //     ],
         //   ),
         // ),
-        SizedBox(width: 32),
+        const SizedBox(width: 32),
       ],
     );
   }

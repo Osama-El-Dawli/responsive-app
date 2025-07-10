@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {
-  static TextStyle styleRegular16(context) {
-    return TextStyle(
-      color: const Color(0xFF064060),
-      fontSize: 16,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w400,
-    );
-  }
+  static const TextStyle styleRegular16 = TextStyle(
+    color: Color(0xFF064060),
+    fontSize: 16,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w400,
+  );
 
   static const TextStyle styleBold16 = TextStyle(
     color: Color(0xFF4EB7F2),
@@ -68,12 +66,10 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle styleSemiBold18() {
-    return TextStyle(
-      color: const Color(0xFFFFFFFF),
-      fontSize: 18,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600,
-    );
-  }
+  static const TextStyle styleSemiBold18 = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 18,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+  );
 }
