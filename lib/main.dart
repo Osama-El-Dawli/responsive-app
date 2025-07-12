@@ -11,9 +11,9 @@ class DashBoardApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: Color(0xffF7F9FA)),
+      theme: ThemeData(scaffoldBackgroundColor: const Color(0xffF7F9FA)),
       debugShowCheckedModeBanner: false,
-      home: DashboardView(),
+      home: const DashboardView(),
     );
   }
 }

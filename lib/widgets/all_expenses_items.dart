@@ -13,19 +13,19 @@ class AllExpensesItems extends StatefulWidget {
 class _AllExpensesItemsState extends State<AllExpensesItems> {
   int selectedIndex = 0;
   final List<AllExpensesItemModel> items = [
-    AllExpensesItemModel(
+    const AllExpensesItemModel(
       image: Assets.imagesBalance,
       title: 'Balance',
       date: 'April 2025',
       price: r'$20,129',
     ),
-    AllExpensesItemModel(
+    const AllExpensesItemModel(
       image: Assets.imagesIncome,
       title: 'Income',
       date: 'April 2025',
       price: r'$15,000',
     ),
-    AllExpensesItemModel(
+    const AllExpensesItemModel(
       image: Assets.imagesExpences,
       title: 'Expenses',
       date: 'April 2025',

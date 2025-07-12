@@ -20,13 +20,13 @@ class AllExpensesItemHeader extends StatelessWidget {
           width: 60,
           height: 60,
           decoration: ShapeDecoration(
-            shape: OvalBorder(),
+            shape: const OvalBorder(),
             color: shapeColor ?? const Color(0xffFAFAFA),
           ),
           child: SvgPicture.asset(
             image,
             colorFilter: ColorFilter.mode(
-              iconColor ?? Color(0xff4EB7F2),
+              iconColor ?? const Color(0xff4EB7F2),
               BlendMode.srcIn,
             ),
           ),
@@ -34,7 +34,7 @@ class AllExpensesItemHeader extends StatelessWidget {
         const Spacer(),
         Icon(
           Icons.arrow_forward_ios_rounded,
-          color: iconColor ?? Color(0xFF064061),
+          color: iconColor ?? const Color(0xFF064061),
         ),
       ],
     );

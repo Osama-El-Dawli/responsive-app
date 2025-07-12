@@ -17,11 +17,11 @@ class RangeOptions extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Text('Monthly', style: AppStyles.styleMedium16),
+          const Text('Monthly', style: AppStyles.styleMedium16),
           const SizedBox(width: 18),
           Transform.rotate(
             angle: 1.571,
-            child: Icon(
+            child: const Icon(
               Icons.arrow_forward_ios_rounded,
               color: Color(0xFF064061),
             ),

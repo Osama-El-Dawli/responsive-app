@@ -23,8 +23,8 @@ abstract class AppStyles {
   );
 
   static TextStyle styleMedium20() {
-    return TextStyle(
-      color: const Color(0xFFFFFFFF),
+    return const TextStyle(
+      color: Color(0xFFFFFFFF),
       fontSize: 20,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500,
