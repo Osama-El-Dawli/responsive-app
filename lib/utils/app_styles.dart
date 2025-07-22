@@ -22,14 +22,12 @@ abstract class AppStyles {
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle styleMedium20() {
-    return const TextStyle(
-      color: Color(0xFFFFFFFF),
-      fontSize: 20,
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w500,
-    );
-  }
+  static const TextStyle styleMedium20 = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 20,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w500,
+  );
 
   static const TextStyle styleSemiBold16 = TextStyle(
     color: Color(0xFF064061),
