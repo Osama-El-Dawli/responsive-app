@@ -20,7 +20,7 @@ class TransactionHistory extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 16),
-        const Expanded(child: TransactionHistoryListView()),
+        const TransactionHistoryListView(),
       ],
     );
   }
